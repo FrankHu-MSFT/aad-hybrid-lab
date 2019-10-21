@@ -38,6 +38,34 @@
       "properties": {
         "securityRules": [
           {
+                    "name": "internet_access",
+                    "properties":{
+                        "description": "internet_access for all items",
+                        "protocol": "Tcp",
+                        "sourcePortRange": "*",
+                        "destinationPortRange": "*",
+                        "sourceAddressPrefix": "*",
+                        "destinationAddressPrefix": "*",
+                        "access": "Allow",
+                        "priority": 100,
+                        "direction": "Outbound"
+                    }
+          },
+          {
+                    "name": "internet_access",
+                    "properties":{
+                        "description": "internet_access for all items",
+                        "protocol": "Tcp",
+                        "sourcePortRange": "*",
+                        "destinationPortRange": "*",
+                        "sourceAddressPrefix": "*",
+                        "destinationAddressPrefix": "*",
+                        "access": "Allow",
+                        "priority": 100,
+                        "direction": "inbound"
+                    }
+          },
+          {
             "name": "allow_RDP_to_AD_Servers",
             "properties": {
               "description": "Allow RDP to AD Servers",
